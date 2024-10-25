@@ -1,19 +1,42 @@
-# Bash
-Append to your bashrc file:
+# Install
+
+`gsetup`
+or
+`sh ~dev/public-scripts/.dev-setup.sh`
+
+## Environment Setup
+
+**All of these scripts rely on the user's `~/dev/` dir
+
+1. Commands - Easy Install
+
 ```
-alias gstatus="sh ~/dev/helper-scripts/.dev-status.sh"
-alias gsetup="sh ~/dev/helper-scripts/.dev-setup.sh"
+echo -e '\nalias gstatus="sh ~/dev/public-scripts/.dev-status.sh"\nalias gsetup="sh ~/dev/public-scripts/.dev-setup.sh"\nalias gsync="gsetup"\nalias gswitch="sh ~/dev/public-scripts/.dev-switch.sh"\nalias gbuild="sh ~/dev/public-scripts/.dev-build-image.sh"' >> ~/.bashrc
+```
+
+2. Commands - Manual Install
+
+Append to your bashrc file using `vim ~/.bashrc` or `nano ~/.bashrc` or `emacs ~/.bashrc` the following lines:
+
+```
+alias gstatus="sh ~/dev/public-scripts/.dev-status.sh"
+alias gsetup="sh ~/dev/public-scripts/.dev-setup.sh"
 alias gsync="gsetup"
-alias gswitch="sh ~/dev/helper-scripts/.dev-switch.sh"
-alias gbuild="sh ~/dev/helper-scripts/.dev-build-image.sh"
-```
-One Liner to install to bashrc:
-```
-echo -e '\nalias gstatus="sh ~/dev/helper-scripts/.dev-status.sh"\nalias gsetup="sh ~/dev/helper-scripts/.dev-setup.sh"\nalias gsync="gsetup"\nalias gswitch="sh ~/dev/helper-scripts/.dev-switch.sh"\nalias gbuild="sh ~/dev/helper-scripts/.dev-build-image.sh"' >> ~/.bashrc
+alias gswitch="sh ~/dev/public-scripts/.dev-switch.sh"
+alias gbuild="sh ~/dev/public-scripts/.dev-build-image.sh"
 ```
 
-**All of these scripts rely on the user's `~/dev/` dir and `~/dev/prod/` dir.**
+# Usage
 
+## Commands
+`gstatus` view the (git) status of all projects
+`gsetup` clones the projects from github for an initial install; Techincally the same as `gsync`
+`gsync` pulls the latest changes from the remote repositories; Technichally the same as `gsetup`
+`gswitch [branch-name]` switches all projects to the specified branch
+`gbuild` syncrhonizes the include headers then compiles the project
+
+
+## Files
 
 `sh .dev-setup.sh`
 Downloads the projects into `~/dev/` via cloning from github.
