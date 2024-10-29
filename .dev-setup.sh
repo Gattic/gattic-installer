@@ -4,8 +4,8 @@ echo $devDir
 
 mkdir "$devDir" 2> /dev/null
 
-git -C "$devDir" clone git@github.com:Gattic/public-scripts.git
-git -C "$devDir/public-scripts" pull origin
+git -C "$devDir" clone git@github.com:Gattic/gattic-installer.git
+git -C "$devDir/gattic-installer" pull origin
 
 git -C "$devDir" clone git@github.com:Gattic/ShmeaDB.git
 git -C "$devDir/ShmeaDB" pull origin

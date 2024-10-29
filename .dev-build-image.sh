@@ -5,7 +5,7 @@ mkdir "$devDir" 2> /dev/null
 
 echo "----"
 
-sh "$devDir/public-scripts/.inc-upd.sh"
+sh "$devDir/gattic-installer/.inc-upd.sh"
 
 echo "----"
 # Build and install it all

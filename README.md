@@ -30,9 +30,13 @@ alias gbuild="sh ~/dev/gattic-installer/.dev-build-image.sh"
 
 ## Commands
 `gstatus` view the (git) status of all projects
+
 `gsetup` clones the projects from github for an initial install; Techincally the same as `gsync`
+
 `gsync` pulls the latest changes from the remote repositories; Technichally the same as `gsetup`
+
 `gswitch [branch-name]` switches all projects to the specified branch
+
 `gbuild` syncrhonizes the include headers then compiles the project
 
 
