@@ -2,7 +2,7 @@
 
 `gsetup`
 or
-`sh ~dev/public-scripts/.dev-setup.sh`
+`sh ~dev/gattic-installer/.dev-setup.sh`
 
 ## Environment Setup
 
@@ -11,7 +11,7 @@ or
 1. Commands - Easy Install
 
 ```
-echo -e '\nalias gstatus="sh ~/dev/public-scripts/.dev-status.sh"\nalias gsetup="sh ~/dev/public-scripts/.dev-setup.sh"\nalias gsync="gsetup"\nalias gswitch="sh ~/dev/public-scripts/.dev-switch.sh"\nalias gbuild="sh ~/dev/public-scripts/.dev-build-image.sh"' >> ~/.bashrc
+echo -e '\nalias gstatus="sh ~/dev/gattic-installer/.dev-status.sh"\nalias gsetup="sh ~/dev/gattic-installer/.dev-setup.sh"\nalias gsync="gsetup"\nalias gswitch="sh ~/dev/gattic-installer/.dev-switch.sh"\nalias gbuild="sh ~/dev/gattic-installer/.dev-build-image.sh"' >> ~/.bashrc
 ```
 
 2. Commands - Manual Install
@@ -19,11 +19,11 @@ echo -e '\nalias gstatus="sh ~/dev/public-scripts/.dev-status.sh"\nalias gsetup=
 Append to your bashrc file using `vim ~/.bashrc` or `nano ~/.bashrc` or `emacs ~/.bashrc` the following lines:
 
 ```
-alias gstatus="sh ~/dev/public-scripts/.dev-status.sh"
-alias gsetup="sh ~/dev/public-scripts/.dev-setup.sh"
+alias gstatus="sh ~/dev/gattic-installer/.dev-status.sh"
+alias gsetup="sh ~/dev/gattic-installer/.dev-setup.sh"
 alias gsync="gsetup"
-alias gswitch="sh ~/dev/public-scripts/.dev-switch.sh"
-alias gbuild="sh ~/dev/public-scripts/.dev-build-image.sh"
+alias gswitch="sh ~/dev/gattic-installer/.dev-switch.sh"
+alias gbuild="sh ~/dev/gattic-installer/.dev-build-image.sh"
 ```
 
 # Usage
