@@ -4,7 +4,7 @@
 
 **All of these scripts rely on the user's `~/dev/` dir
 
-`git clone https://github.com/Gattic/gattic-installer ~/dev/gattic-installer`
+`git clone git@github.com:Gattic/gattic-installer.git ~/dev/gattic-installer`
 
 2. Copy the Gattic commands into our environment
 
